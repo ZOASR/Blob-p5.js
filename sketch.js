@@ -2,15 +2,9 @@ const beads = [];
 let x;
 let y;
 let a = 0;
-let capture;
-let recording = false;
-let gif;
 
 function setup() {
     createCanvas(innerWidth, innerHeight);
-    //capture = createCapture(VIDEO);
-    // capture.size(width, height);
-    //capture.hide();
     for (let i = 0; i < 20; i++) {
         beads[i] = new Bead(width / 2, height / 2, i * 4, 1 / i);
     }
